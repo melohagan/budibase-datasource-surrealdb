@@ -61,7 +61,6 @@ class CustomIntegration implements IntegrationBase {
 
   async advancedQuery(query: SqlQuery) {
     await this.useDb()
-    console.log("QUERY ", query.sql)
     return await this.db.query(query.sql)
   }
 }
