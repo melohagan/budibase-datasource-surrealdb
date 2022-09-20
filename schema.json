@@ -1,0 +1,115 @@
+{
+  "type": "datasource",
+  "metadata": {},
+  "schema": {
+    "docs": "https://surrealdb.com/docs/start",
+    "friendlyName": "SurrealDB",
+    "type": "Relational",
+    "description": "SurrealQL is a powerful database query language which closely resembles traditional SQL",
+    "datasource": {
+      "host": {
+        "type": "string",
+        "default": "http://localhost",
+        "required": true
+      },
+      "port": {
+        "type": "number",
+        "default": 8000,
+        "required": false
+      },
+      "user": {
+        "type": "string",
+        "default": "root",
+        "required": true
+      },
+      "password": {
+        "type": "password",
+        "default": "root",
+        "required": true
+      },
+      "namespace": {
+        "type": "string",
+        "required": true
+      },
+      "database": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "query": {
+      "create": {
+        "type": "fields",
+        "fields": {
+          "collection": {
+            "type": "string",
+            "required": true
+          },
+          "body": {
+            "type": "json",
+            "required": true
+          }
+        }
+      },
+      "read": {
+        "type": "fields",
+        "fields": {
+          "collection": {
+            "type": "string",
+            "required": true
+          }
+        }
+      },
+      "update": {
+        "type": "fields",
+        "fields": {
+          "collection": {
+            "type": "string",
+            "required": true
+          },
+          "body": {
+            "type": "json",
+            "required": true
+          }
+        }
+      },
+      "change": {
+        "type": "fields",
+        "fields": {
+          "collection": {
+            "type": "string",
+            "required": true
+          },
+          "body": {
+            "type": "json",
+            "required": true
+          }
+        }
+      },
+      "modify": {
+        "type": "fields",
+        "fields": {
+          "collection": {
+            "type": "string",
+            "required": true
+          },
+          "body": {
+            "type": "json",
+            "required": true
+          }
+        }
+      },
+      "delete": {
+        "type": "fields",
+        "fields": {
+          "collection": {
+            "type": "string",
+            "required": true
+          }
+        }
+      },
+      "advancedQuery": {
+        "type": "sql"
+      }
+    }
+  }
+}
