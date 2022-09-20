@@ -1,7 +1,7 @@
 # SurrealDB
 Full official docs can be found here: https://surrealdb.com/docs/integration/libraries/nodejs
 
-The **AdvancedQuery** function allows you to enter a SurrealQL query. The other functions will behave as outlined in the above docs.
+The **AdvancedQuery** function allows you to enter a [SurrealQL](https://surrealdb.com/docs/surrealql) query. The other functions will behave as outlined in the above docs.
 
 # Description
 Budibase connector for performing CRUD ops against SurrealDB
