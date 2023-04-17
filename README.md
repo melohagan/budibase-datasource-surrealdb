@@ -17,7 +17,7 @@ Then you can connect in Budibase:
 Note that `host.docker.internal` is being used here because I am running Budibase in a local docker container connecting to a local SurrealDB instance.
 
 
-## Usage
+## Usage
 
 ### Creating a document in a collection
 
