@@ -1,6 +1,6 @@
 {
   "name": "surrealdb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Budibase connector for performing CRUD ops against SurrealDB",
   "main": "src/index.ts",
   "license": "MIT",
